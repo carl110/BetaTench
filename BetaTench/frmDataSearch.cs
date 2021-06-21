@@ -21,6 +21,9 @@ namespace BetaTench
         public frmDataSearch()
         {
             InitializeComponent();
+            myPrintDocument.BeginPrint += myPrintDocument_BeginPrint;
+            myPrintDocument.PrintPage += myPrintDocument_PrintPage;
+            printFont = new Font("Ariel", 10.0f);
         }
         private void SetUp()
         {   //Loop through list of cars and add to datagridview
@@ -81,7 +84,7 @@ namespace BetaTench
                 employeeRecord = string.Format(
                        "{0} {1} {2} {3}",
                        listOfEmployees[recordNumber].EmployeeID.ToString().PadRight(15),
-                       listOfEmployees[recordNumber].LastName.ToString() + ", " + listOfEmployees[recordNumber].FirstName[0].ToString().PadRight(15),
+                       (listOfEmployees[recordNumber].LastName.ToString() + ", " + listOfEmployees[recordNumber].FirstName[0].ToString()).PadRight(15),
                        listOfEmployees[recordNumber].Department.ToString().PadRight(10),
                        listOfEmployees[recordNumber].Salary.ToString().PadRight(15)
                        );
