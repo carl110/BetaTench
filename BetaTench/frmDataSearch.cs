@@ -104,7 +104,6 @@ namespace BetaTench
         {
             recordNumber = 0;
         }
-
         private void btnShow_Click(object sender, EventArgs e)
         {
             if (cboDepartment.Text.Length > 0)
@@ -115,7 +114,6 @@ namespace BetaTench
                 SetUp();
             }
         }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             frmEmployees employees = new frmEmployees();
@@ -123,7 +121,6 @@ namespace BetaTench
             employees.ShowDialog();
             this.Close();
         }
-
         private void btnPrint_Click(object sender, EventArgs e)
         {
             PrintDialog printDialog = new PrintDialog();

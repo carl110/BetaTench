@@ -19,7 +19,6 @@ namespace BetaTench
         {
             InitializeComponent();
         }
-
         private void ShowRecord()
         { //Method to show data according to list number called 
             if (listOfEmployees.Count > 0)
@@ -40,13 +39,11 @@ namespace BetaTench
                 txtRecordCount.Text = "No Records";
             }
         }
-
         public static bool IsNumeric(string text)
         {
             double test;
             return double.TryParse(text, out test);
         }
-
         private bool isDate(string inputDate)
         {
             DateTime value;
@@ -56,13 +53,11 @@ namespace BetaTench
             }
             else return false;
         }
-
         private void frmEmployees_Load(object sender, EventArgs e) => this.Text = $"Task A Carl Wainwright {DateTime.Now.ToShortDateString()}";
         private void btnLoadData_Click(object sender, EventArgs e)
         {
             ShowRecord();
         }
-
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             if (IsNumeric(txtSalary.Text))
@@ -93,13 +88,11 @@ namespace BetaTench
                                          txtDepartment.Text);
             }
         }
-
         private void btnFirst_Click(object sender, EventArgs e)
         {
             recordNumber = 0;
             ShowRecord();
         }
-
         private void btnPrevious_Click(object sender, EventArgs e)
         {
             if (recordNumber == 0)
@@ -112,7 +105,6 @@ namespace BetaTench
             }
             ShowRecord();
         }
-
         private void btnNext_Click(object sender, EventArgs e)
         {
             if (recordNumber == listOfEmployees.Count - 1)
@@ -125,17 +117,13 @@ namespace BetaTench
             }
             ShowRecord();
         }
-
         private void btnLast_Click(object sender, EventArgs e)
         {
             recordNumber = listOfEmployees.Count - 1;
             ShowRecord();
         }
-
         private void btnCancel_Click(object sender, EventArgs e) => ShowRecord();
-
         private void btnExit_Click(object sender, EventArgs e) => Application.Exit();
-
         private void frmEmployees_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F10)
@@ -148,7 +136,6 @@ namespace BetaTench
                 ShowRecord();
             }
         }
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
             frmDataSearch search = new frmDataSearch();
