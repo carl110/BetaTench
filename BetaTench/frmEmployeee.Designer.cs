@@ -215,6 +215,7 @@ namespace BetaTench
             // txtFirstName
             // 
             this.txtFirstName.Location = new System.Drawing.Point(175, 130);
+            this.txtFirstName.MaxLength = 25;
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(268, 31);
             this.txtFirstName.TabIndex = 16;
@@ -222,6 +223,7 @@ namespace BetaTench
             // txtLastName
             // 
             this.txtLastName.Location = new System.Drawing.Point(175, 170);
+            this.txtLastName.MaxLength = 30;
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(268, 31);
             this.txtLastName.TabIndex = 17;
@@ -229,6 +231,7 @@ namespace BetaTench
             // txtNINo
             // 
             this.txtNINo.Location = new System.Drawing.Point(175, 210);
+            this.txtNINo.MaxLength = 9;
             this.txtNINo.Name = "txtNINo";
             this.txtNINo.Size = new System.Drawing.Size(268, 31);
             this.txtNINo.TabIndex = 18;
@@ -257,6 +260,7 @@ namespace BetaTench
             // txtDepartment
             // 
             this.txtDepartment.Location = new System.Drawing.Point(175, 330);
+            this.txtDepartment.MaxLength = 30;
             this.txtDepartment.Name = "txtDepartment";
             this.txtDepartment.Size = new System.Drawing.Size(268, 31);
             this.txtDepartment.TabIndex = 22;
@@ -271,6 +275,7 @@ namespace BetaTench
             // txtJobTitle
             // 
             this.txtJobTitle.Location = new System.Drawing.Point(175, 410);
+            this.txtJobTitle.MaxLength = 30;
             this.txtJobTitle.Name = "txtJobTitle";
             this.txtJobTitle.Size = new System.Drawing.Size(268, 31);
             this.txtJobTitle.TabIndex = 24;
@@ -282,6 +287,7 @@ namespace BetaTench
             this.txtRecordCount.Name = "txtRecordCount";
             this.txtRecordCount.Size = new System.Drawing.Size(99, 31);
             this.txtRecordCount.TabIndex = 25;
+            this.txtRecordCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox1
             // 
