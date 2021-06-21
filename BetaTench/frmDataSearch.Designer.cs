@@ -56,7 +56,6 @@ namespace BetaTench
             this.cboDepartment.Size = new System.Drawing.Size(182, 33);
             this.cboDepartment.TabIndex = 0;
             this.cboDepartment.Text = "Software";
-            this.cboDepartment.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnShow
             // 
@@ -86,6 +85,7 @@ namespace BetaTench
             this.btnPrint.TabIndex = 3;
             this.btnPrint.Text = "Print Results";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnClose
             // 
@@ -112,7 +112,6 @@ namespace BetaTench
             this.dgvEmployee.RowTemplate.Height = 33;
             this.dgvEmployee.Size = new System.Drawing.Size(776, 281);
             this.dgvEmployee.TabIndex = 5;
-            this.dgvEmployee.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
